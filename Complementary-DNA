@@ -1,0 +1,24 @@
+function DNAStrand(dna) {
+  let retStr = '';
+  for (let i = 0; i < dna.length; i++) {
+    let elm = dna.substring(i, i+1);
+    switch(elm) {
+        case 'A':
+          retStr += 'T';
+          break;
+        case 'T':
+          retStr += 'A';
+          break;
+        case 'C':
+          retStr += 'G';
+          break;
+        case 'G':
+          retStr += 'C';
+          break;
+        default:
+          retStr += elm;
+          continue;
+    }
+  }
+  return retStr;
+}
