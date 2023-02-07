@@ -1,0 +1,7 @@
+function disemvowel(str) {
+  const pattern = /[aAeEiIoOuU]/;
+  let retStr = '';
+  
+  str.split(pattern).forEach(elm => retStr += elm);
+  return retStr;
+}
